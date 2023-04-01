@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { links, social } from "../data";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -32,7 +33,7 @@ const Navbar = () => {
               const { id, url, text } = link;
               return (
                 <li key={id}>
-                  <a href={url}>{text}</a>
+                  <Link to={url}>{text}</Link>
                 </li>
               );
             })}
