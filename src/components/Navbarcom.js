@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaBold } from "react-icons/fa";
 import { links, social } from "../data";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -22,7 +22,13 @@ const Navbar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <h2 style={{ color: "white" }}>Shahzaib's Portfolio</h2>
+          <Link
+            to="/"
+            className="h2"
+            style={{ fontSize: 35, color: "white", fontWeight: "bold" }}
+          >
+            Shahzaib's Portfolio
+          </Link>
           <button className="nav-toggle" onClick={toggleLinks}>
             <FaBars />
           </button>

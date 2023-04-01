@@ -201,6 +201,11 @@ nav {
   padding: 1rem;
 }
 
+.nav-header h2 {
+  font-size: 10rem;
+  color: white;
+}
+
 .nav-toggle {
   font-size: 1.5rem;
   color: var(--clr-primary-5);
