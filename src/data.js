@@ -43,4 +43,5 @@ export const social = [
 
 export const Skills = "Web Development  ,  Desktop Development";
 
-export const personalInfo = "I am Shahzaib Irfan the creater of this website.";
+export const personalInfo =
+  "I am Shahzaib Irfan, currently pursuing a Bachelor of Science degree in Computer Science at UET Lahore, and I am in my 4th semester of study. I have gained experience in the areas of Data Structures & Algorithms and Database Systems.";

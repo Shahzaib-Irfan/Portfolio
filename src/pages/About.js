@@ -24,7 +24,7 @@ const About = () => {
           return prevIndex + 1;
         }
       });
-    }, 300);
+    }, 200);
 
     return () => clearInterval(intervalId);
   }, [index, isReversed]);
@@ -33,7 +33,7 @@ const About = () => {
     <div className="section section-center">
       <div className="container-home">
         <div className="left">
-          <h1 style={{ color: "AppWorkspace" }}>{text.slice(0, index)}</h1>
+          <h2 style={{ color: "AppWorkspace" }}>{text.slice(0, index)}</h2>
         </div>
         <div className="right">
           <img src={shahzaib} alt="" />

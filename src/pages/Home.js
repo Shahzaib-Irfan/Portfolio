@@ -24,7 +24,7 @@ const Home = () => {
           return prevIndex + 1;
         }
       });
-    }, 300);
+    }, 200);
 
     return () => clearInterval(intervalId);
   }, [index, isReversed]);

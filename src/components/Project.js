@@ -1,5 +1,5 @@
 import React from "react";
-import { FaSearch } from "react-icons/fa";
+import { FaLink } from "react-icons/fa";
 
 const Project = ({ id, url, navigateTo, text }) => {
   return (
@@ -9,7 +9,7 @@ const Project = ({ id, url, navigateTo, text }) => {
         {text} <br />
         <span>
           <a style={{ color: "burlywood" }} href={navigateTo}>
-            Link
+            <FaLink />
           </a>
         </span>
       </div>
